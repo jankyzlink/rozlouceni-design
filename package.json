@@ -1,0 +1,17 @@
+{
+  "name": "@rozlouceni/tokens",
+  "version": "1.0.0",
+  "description": "Design tokeny značky Rozloučení (paleta Eternal Blue) pro Tailwind CSS v4",
+  "license": "UNLICENSED",
+  "files": ["index.css", "tokens.css", "theme.css"],
+  "style": "index.css",
+  "exports": {
+    ".": "./index.css",
+    "./index.css": "./index.css",
+    "./tokens.css": "./tokens.css",
+    "./theme.css": "./theme.css"
+  },
+  "scripts": {
+    "check": "node scripts/check-contrast.mjs"
+  }
+}

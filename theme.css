@@ -1,0 +1,55 @@
+/*
+ * Napojení tokenů na Tailwind CSS v4: vzniknou utility jako bg-surface,
+ * text-on-surface-muted, border-border-strong, shadow-card, font-display.
+ *
+ * Písma: soubory písem balíček neobsahuje. Zóna je načte sama a buď je
+ * pojmenuje "Inter" / "Gelica" (@font-face, Google Fonts), nebo nastaví
+ * proměnné --font-inter / --font-gelica (next/font). Bez Gelicy se nadpisy
+ * vykreslí Georgií.
+ */
+
+@theme inline {
+  --font-body: var(--font-inter, "Inter"), -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-gelica, "Gelica"), Georgia, "Times New Roman", serif;
+
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-surface-sunken: var(--color-surface-sunken);
+  --color-surface-tint: var(--color-surface-tint);
+  --color-surface-warm: var(--color-surface-warm);
+  --color-surface-overlay: var(--color-surface-overlay);
+
+  --color-on-surface: var(--color-on-surface);
+  --color-on-surface-secondary: var(--color-on-surface-secondary);
+  --color-on-surface-muted: var(--color-on-surface-muted);
+  --color-on-surface-inverse: var(--color-on-surface-inverse);
+
+  --color-accent: var(--color-accent);
+  --color-accent-muted: var(--color-accent-muted);
+
+  --color-link: var(--color-link);
+  --color-link-hover: var(--color-link-hover);
+
+  --color-button-primary: var(--color-button-primary);
+  --color-button-primary-hover: var(--color-button-primary-hover);
+  --color-button-primary-text: var(--color-button-primary-text);
+
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-border-focus: var(--color-border-focus);
+  --color-border-active: var(--color-border-active);
+
+  --color-success: var(--color-success);
+  --color-success-muted: var(--color-success-muted);
+  --color-warn: var(--color-warn);
+  --color-warn-muted: var(--color-warn-muted);
+  --color-danger: var(--color-danger);
+  --color-danger-muted: var(--color-danger-muted);
+
+  --color-section-label: var(--color-section-label);
+  --color-check-bg: var(--color-check-bg);
+  --color-check-text: var(--color-check-text);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-card-hover: var(--shadow-card-hover);
+}

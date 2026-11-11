@@ -1,0 +1,60 @@
+/*
+ * Rozloučení — design tokeny, paleta Eternal Blue.
+ * Jediný zdroj pravdy pro rozlouceni.cz, moje.rozlouceni.cz a app.rozlouceni.cz.
+ *
+ * Tento soubor jen nastavuje CSS proměnné. Na Tailwind je napojuje theme.css.
+ * Zóna si smí hodnoty přepsat vlastním blokem za importem (např. .dark v app).
+ */
+
+:root {
+  /* Plochy */
+  --color-surface: #EEF3F8;
+  --color-surface-raised: #FFFFFF;
+  --color-surface-sunken: #E8E8F2;
+  --color-surface-tint: #E0E0F0;
+  --color-surface-warm: #EDEDF8;
+  --color-surface-overlay: rgba(20, 20, 82, 0.20);
+
+  /* Text */
+  --color-on-surface: #141452;
+  --color-on-surface-secondary: #383870;
+  /* 5,45:1 na bílé. Původní webová #6C6C9C měla 4,41:1 a neprošla WCAG AA. */
+  --color-on-surface-muted: #5E5E8C;
+  --color-on-surface-inverse: #F4F4FA;
+
+  /* Akcent */
+  --color-accent: #5252A3;
+  --color-accent-muted: rgba(82, 82, 163, 0.10);
+
+  /* Odkazy */
+  --color-link: #5252A3;
+  --color-link-hover: #3D3D8A;
+
+  /* Primární tlačítko */
+  --color-button-primary: #141452;
+  --color-button-primary-hover: #1E1E64;
+  --color-button-primary-text: #FFFFFF;
+
+  /* Linky a ohraničení */
+  --color-border: rgba(20, 20, 82, 0.08);
+  --color-border-strong: rgba(20, 20, 82, 0.15);
+  --color-border-focus: rgba(82, 82, 163, 0.30);
+  --color-border-active: #5252A3;
+
+  /* Stavy */
+  --color-success: #394B47;
+  --color-success-muted: #DCEEE7;
+  --color-warn: #8A6118;
+  --color-warn-muted: #FFF3D6;
+  --color-danger: #9C4A37;
+  --color-danger-muted: #FDEBE7;
+
+  /* Drobné prvky značky */
+  --color-section-label: #2E2E90;
+  --color-check-bg: #D0D0F0;
+  --color-check-text: #3535A0;
+
+  /* Stíny karet */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
